@@ -28,3 +28,9 @@ https://github.com/Plant-Pharmacy
     - aiones@uw.edu
 - Pooja Ramanathan (CTO)
     - ps2112@uw.edu
+
+## References
+1. https://hortnews.extension.iastate.edu/2005/12-7/dis.html
+2. https://pixabay.com/vectors/pokemon-type-element-design-symbol-3414810/
+3. https://www.treehugger.com/health/5-health-benefits-houseplants.html
+4. https://www.finegardening.com/
