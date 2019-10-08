@@ -2,7 +2,8 @@
 ### Saving the world, one plant at a time <3
 
 ## Company Name
-PlantPharmacy 
+PlantPharmacy
+
 Saving the world, one plant at a time <3
 
 ## Company Mission Statement
