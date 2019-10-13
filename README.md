@@ -1,11 +1,10 @@
-## Company Name
-PlantPharmacy
+# PlantPharmacy
+*Saving the world, one plant at a time <3*
 
-Saving the world, one plant at a time <3
 ## Logo
 (In the images folder)
 
-## Company Mission Statement
+## Our Mission
 PlantPharmacy's mission is to help users identify the plant disease and the suitable treatment with high accuracy and less confusion.
 
 ## Problem
