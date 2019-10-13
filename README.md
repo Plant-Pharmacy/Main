@@ -1,8 +1,4 @@
-# PlantPharmacy
-*Saving the world, one plant at a time <3*
-
-## Logo
-(In the images folder)
+![PlantPharmy logo](./Images/logo.png)
 
 ## Our Mission
 PlantPharmacy's mission is to help users identify the plant disease and the suitable treatment with high accuracy and less confusion.
