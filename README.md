@@ -1,4 +1,4 @@
-![PlantPharmy logo](./Images/logo.png)
+<img src="./Images/logo.png" width="70%">.
 
 ## Our Mission
 PlantPharmacy's mission is to help users identify the plant disease and the suitable treatment with high accuracy and less confusion.
