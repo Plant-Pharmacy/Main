@@ -1,3 +1,7 @@
+<p align="center">
+    <img src="./Images/logo.png" width="60%">
+</p>
+
 # PlantPharmacy Design Specification
 
 ## Problem
