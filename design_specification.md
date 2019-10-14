@@ -12,3 +12,5 @@ Based on a survey...
 Give stakeholders a platform and the tools necessary to identify a pathological diagnosis to the plant's ailment. 
 
 Plant Pharmacy's interface layout is responsive to user's screen size, and utilizes a consistent interface layout for cross-platform usage.
+
+### Wireframes
