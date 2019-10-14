@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="./Images/logo.png" width="70%">
+    <img src="./Images/logo.png" width="60%">
 </p>
 
 ## Our Mission
