@@ -33,7 +33,7 @@ File requirements are satisfied thus the user receives the "results screen" show
 File requirements are not satisfied thus the user receives the error screens shown below. 
 
 <p align="center">
-<img src="./Images/wireframes/error1_component.png" width="50%" border = "1">
+<kbd><img src="./Images/wireframes/error1_component.png" width="50%" ></kbd>
 <img src="./Images/wireframes/error2_component.png" width="50%" border = "1">
 </p>
 
