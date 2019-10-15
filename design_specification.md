@@ -5,9 +5,7 @@
 # PlantPharmacy Design Specification
 
 ## Problem
-Plants are essential to our health. They provide us with clean air, absorb harmful toxins, produce nutrients for all living organisms3, and offer numerous benefits to our environment. Yet many plants are sensitive to various ailments and often die. Most people who may own or take care of an indoor or outdoor plant aren’t aware of the causes that start infections, what effects it has, or what they can do to treat it. Research into the cause may be painstaking or difficult. This hurts the efforts of an individual or organization to benefit from plants in a sustainable manner and also makes it expensive to replace plants that could have been saved.
-
-
+Plants are essential to our health. They provide us with clean air, absorb harmful toxins, produce nutrients for all living organisms, and offer numerous benefits to our environment. Yet many plants are sensitive to various ailments and often die. Most people who may own or take care of an indoor or outdoor plant aren’t aware of the causes that start infections, what effects it has, or what they can do to treat it. Research into the cause may be painstaking or difficult. This hurts the efforts of an individual or organization to benefit from plants in a sustainable manner and also makes it expensive to replace plants that could have been saved.
 
 ## Solution
 Give stakeholders a platform and the tools necessary to identify a pathological diagnosis to the plant's ailment. 
