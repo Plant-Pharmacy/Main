@@ -30,11 +30,13 @@ File requirements are satisfied thus the user receives the "results screen" show
 <img src="./Images/wireframes/results_component.png" width="40%">
 </p>
 
-File requirements are not satisfied thus the user receives the error screens shown below.
-<br/><br/>
-<img style="float: right;" src="./Images/wireframes/error1_component.png" width="40%" >
-<img style="float: left;" src="./Images/wireframes/error2_component.png" width="40%">
 
+File requirements are not satisfied thus the user receives the error screens shown below.
+
+<p align="center">
+<img  src="./Images/wireframes/error1_component.png" width="40%" align="left">
+<img  src="./Images/wireframes/error2_component.png" width="40%" align="right">
+</p>
 
 
  
