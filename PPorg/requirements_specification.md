@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="./Images/logo.png" width="40%">
+    <img src="../PPorg/Images/logo.png" width="40%">
 </p>
 
 # Requirements
