@@ -1,7 +1,3 @@
-<p align="center">
-    <img src="./Images/logo.png" width="60%">
-</p>
-
 ## Our Mission
 PlantPharmacy's mission is to help users identify the plant disease and the suitable treatment with high accuracy and less confusion.
 
