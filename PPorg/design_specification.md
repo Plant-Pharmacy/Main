@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="./Images/logo.png" width="40%">
+    <img src="../PPorg/Images/logo.png" width="40%">
 </p>
 
 # PlantPharmacy Design Specification
@@ -15,7 +15,7 @@ We envision a mobile web application that detects plant diseases based on user-u
 Plant Pharmacy's interface layout is responsive to user's screen size, and utilizes a consistent interface layout for cross-platform usage. Our user interface is very simple. We have a single page web application:
 
 <p align="center">
-<img src="./Images/wireframes/home_component.png" width="40%">
+<img src="../PPorg/Images/wireframes/home_component.png" width="40%">
 </p>
 
 Users tap the upload button to upload a single image. For best results, users are recommended to upload an image (JPG or PNG) that’s close to the plant and between 1MB and 35MB in size. This upload button is fixed to the bottom of the browser so that users can have access to uploading a different image from anywhere on the page.
@@ -25,15 +25,15 @@ After a user uploads an image two things could happen:
 File requirements are satisfied thus the user receives the "results screen" shown below. This "results screen" contains the loading state while processing an image, the original image uploaded by the user, and lastly, disease detected in text format.
 
 <p align="center">
-<img src="./Images/wireframes/results_component.png" width="40%">
+<img src="../PPorg/Images/wireframes/results_component.png" width="40%">
 </p>
 
 
 File requirements are not satisfied thus the user receives the error screens shown below.
 
 <p align="center">
-<img  src="./Images/wireframes/error1_component.png" width="40%" align="left">
-<img  src="./Images/wireframes/error2_component.png" width="40%" align="right">
+<img  src="../PPorg/Images/wireframes/error1_component.png" width="40%" align="left">
+<img  src="../PPorg/Images/wireframes/error2_component.png" width="40%" align="right">
 </p>
 
 
