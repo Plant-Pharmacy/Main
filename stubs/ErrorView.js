@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 
 
-// Displays image back to user
+// Displays error to user in dialog
 
-// Required props: image
-class ImageView extends Component {
+// Required props: errorMessage
+class ErrorView extends Component {
     constructor(props) {
         super(props)
     }
@@ -13,7 +13,7 @@ class ImageView extends Component {
     render() {
         return (
             <div>
-
+                {this.props.errorMessage}
             </div>
         )
     }
