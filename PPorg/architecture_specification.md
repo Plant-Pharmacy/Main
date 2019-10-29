@@ -19,6 +19,7 @@
 
 ## Views
 React.js
+
 All views are located under Main/PlantPharmacy/frontend/src/components/Layout/
 
 
