@@ -1,6 +1,6 @@
 # Plan Specification
 
-## How will you coordinate your work?
+## Coordination
 
 - Weekly goals 
     - Meet in person or discord on Friday/Saturday morning 
@@ -11,7 +11,7 @@
     - Define next week’s goals/phases and deadlines 
     - Define each member's schedule for working on their part of the project within the week.
 
-## What tools will you use to communicate?
+## Communication
 
 - Discord channels
     - General
@@ -22,7 +22,7 @@
     - Alternative lines of communication include email, text message, and Facebook messenger, but only in the case of nonresponsiveness to Discord Channel.
 
 
-## Who will own components in your architecture?
+## Ownership
 
 - Front-end
     - HeaderView, WelcomeView, UploadView, FooterView, Base CSS
@@ -37,16 +37,17 @@
     - PlantAIController 
         - Adrian/Alessandro
 
-## What is your timeline?
+## Timeline
 
 | Component                                                                                                                                                             | Deadline   |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
 | **Frontend:** Visual Complete<br><br>    - Front-end developers will complete all the visual components of the site, following a consistent style based on the mockup | 11/17/2019 |
 | **Frontend:** Interactive Complete<br><br>    - Upload<br>    - Image shown back<br>    - Alerts                                                                      | 11/22/2019 |
 | **Backend:** PlantAIController Complete                                                                                                                               | 11/26/2019 |
-| **First** **Deployment**                                                                                                                                              | 11/28/2019 |
+| **Initial** **Deployment**                                                                                                                                              | 11/28/2019 |
+| **Testing**                                                                                                                                            | 11/28/2019 - 12/04/2019|
 
-## How will you verify that you’ve met your requirements?
+## Verification
 
 | **Requirement**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | **Verification**                                                                                                                                                                                                                                                                                                                                                      |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
