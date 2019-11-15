@@ -1,5 +1,5 @@
 node_modules
-
+PlantPharmacy/plants/AlexNetModel.hdf5
 ### Django ###
 *.log
 *.pot
