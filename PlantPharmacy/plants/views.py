@@ -7,7 +7,7 @@ from tensorflow.python.keras.backend import set_session
 from tensorflow.python.keras.models import load_model
 global graph, model
 
-sess = tf.InteractiveSession()
+sess = tf.compat.v1.InteractiveSession()
 model = load_model('plants/AlexNetModel.hdf5')
 graph = tf.get_default_graph()
 
