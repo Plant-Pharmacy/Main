@@ -12,6 +12,8 @@ djangorestframework = "*"
 django-rest-knox = "*"
 django-cors-headers = "*"
 pillow = "*"
+tensorflow = "==1.13.1"
+keras = "*"
 
 [requires]
 python_version = "3.7"
