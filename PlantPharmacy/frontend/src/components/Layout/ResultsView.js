@@ -12,10 +12,23 @@ class ResultsView extends Component {
 
     // displays result
     render() {
-        return (
+        return (            
             <div>
                 {this.props.result}
-            </div>
+                    <div className="mainContainer container">
+                        <div className="resultsViewSection">
+                            <div className="reportCard">
+                                <h5>Disease detected</h5>
+                                <h6>Bacterial spot</h6>
+                                <br/>
+                                <p>Material on this page is for informational purposes only and should
+                                    not be constructed as treatment advice.
+                                </p>
+                            </div>
+                            <button className="downloadBtn" type="button">Download Report</button>
+                        </div>
+                    </div>
+            </div> 
         )
     }
 }
