@@ -45,7 +45,7 @@ class UploadView extends Component {
     return (
       <div>
         <form
-          enctype="multipart/form-data"
+          encType="multipart/form-data"
           method="post"
           onSubmit={this.handleSubmit}
         >
