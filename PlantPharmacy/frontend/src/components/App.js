@@ -20,7 +20,9 @@ class App extends Component {
                 <section className ="resultsSection">
                     <ImageView/>
                     <ResultsView/>
-                </section>
+                </section>              
+
+
                 <FooterView/>
             </div>
         );
