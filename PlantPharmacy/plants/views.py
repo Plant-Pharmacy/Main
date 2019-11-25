@@ -35,7 +35,7 @@ class PlantsView(APIView):
         path = os.path.abspath('../PlantPharmacy/media/images/ ')
         path = path.strip()
         # # logger.warning(request.data)
-        filename = path + str(data)
+        filename = path + "\\" + str(data)
         # logger.warning(filename)
 
         if plants_serializer.is_valid():
