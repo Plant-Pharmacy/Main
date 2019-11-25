@@ -47,12 +47,11 @@ class UploadView extends Component {
         <form
           encType="multipart/form-data"
           method="post"
-          name="myfile"
           onSubmit={this.handleSubmit}
         >
           <input
             type="file"
-            name="myfile"
+            name="plantImage"
             accept="image/png, image/jpeg"
             onChange={this.handleImageChange}
             required
