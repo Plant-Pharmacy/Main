@@ -18,6 +18,8 @@ global graph, model
 logger = logging.getLogger(__name__)
 
 # Image Upload
+
+
 class PlantsView(APIView):
     parser_classes = (MultiPartParser, FormParser)
 
@@ -35,15 +37,14 @@ class PlantsView(APIView):
         # # logger.warning(request.data)
         filename = path + str(data)
         # logger.warning(filename)
-        predict(filename)
+
         if plants_serializer.is_valid():
             plants_serializer.save()
+            predict(filename)
             return Response(plants_serializer.data, status=status.HTTP_201_CREATED)
         else:
             print('error', plants_serializer.errors)
             return Response(plants_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
-    
 
 
 sess = tf.InteractiveSession()
@@ -53,6 +54,8 @@ graph = tf.get_default_graph()
 # Procesing Model
 
 # I tried putting it into another function "predict()", it works but doesn't allow for upload.his
+
+
 def predict(filename1):
     # Keras processing for model classification
     img = image.load_img(filename1, target_size=(224, 224))
@@ -74,6 +77,7 @@ def predict(filename1):
             classification = classification_list[index]
 
     logger.warning(classification)
+
 
 def prediction(request):
     if request.method == 'POST' and request.FILES[request]:
