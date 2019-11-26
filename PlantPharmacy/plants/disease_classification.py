@@ -1,5 +1,5 @@
-classification_dict = {'Apple___Apple_scab': 0,
-            'Apple Black_rot': 1,
+classification_dict = {'Apple Apple scab': 0,
+            'Apple Black rot': 1,
             'Apple Cedar apple rust': 2,
             'Apple healthy': 3,
             'Blueberry healthy': 4,
