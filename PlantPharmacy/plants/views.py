@@ -23,6 +23,7 @@ sess = tf.InteractiveSession()
 model = load_model('plants/AlexNetModel.hdf5')
 graph = tf.get_default_graph()
 
+
 class PlantsView(APIView):
     parser_classes = (MultiPartParser, FormParser)
 
@@ -47,7 +48,6 @@ class PlantsView(APIView):
             return Response(plants_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
-
 def predict(file):
     # Keras processing for model classification
     img = image.load_img(file, target_size=(224, 224))
@@ -70,12 +70,8 @@ def predict(file):
 
     logger.warning(classification)
 
-<<<<<<< HEAD
 
 def home(request):
-    return render(request, "frontend/index.html")
-=======
-def prediction(request):
     if request.method == 'POST' and request.FILES[request]:
         post = request.method == 'POST'
         return render(request, "frontend/index.html", {
@@ -83,4 +79,3 @@ def prediction(request):
         })
     else:
         return render(request, "frontend/index.html")
->>>>>>> 5441e974d778bbee6b762124952f184cb08600f6
