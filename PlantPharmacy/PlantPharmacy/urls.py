@@ -6,5 +6,3 @@ urlpatterns = [
     path('', include('plants.urls')),
     path('api/', include('plants.urls')),
 ]
-
-
