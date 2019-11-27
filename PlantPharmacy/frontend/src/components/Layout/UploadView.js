@@ -5,7 +5,6 @@ import React, { Component } from "react";
 // required prop: PhotoController
 
 class UploadView extends Component {
-
   render() {
     return (
       <div>
@@ -24,7 +23,7 @@ class UploadView extends Component {
               onChange={this.props.handleImageChange}
               required
             />
-            <label className="uploadBtnLabel" for="formId">
+            <label className="uploadBtnLabel" htmlFor="formId">
               Upload
             </label>
           </div>
