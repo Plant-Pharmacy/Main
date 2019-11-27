@@ -41,7 +41,9 @@
     "precss": "^4.0.0",
     "prop-types": "^15.7.2",
     "react": "^16.11.0",
+    "react-bootstrap": "^1.0.0-beta.16",
     "react-dom": "^16.11.0",
+    "react-popupbox": "^2.0.8",
     "sass-loader": "^8.0.0",
     "style-loader": "^1.0.0",
     "url-loader": "^2.2.0"
