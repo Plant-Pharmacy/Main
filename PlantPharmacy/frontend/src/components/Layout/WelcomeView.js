@@ -18,13 +18,16 @@ class WelcomeView extends Component {
                   confidently.
                 </p>
                 <img />
+                <UploadView
+                  handleImageChange={this.props.handleImageChange}
+                  handleSubmit={this.props.handleSubmit}
+                />
               </div>
               <p className="uploadCaption">
                 For best results, upload an image (JPG or PNG) that’s close to
                 the subject and between 1MB and 10MB in size.
               </p>
             </div>
-            <UploadView />
           </div>
         </section>
       </div>
