@@ -40,8 +40,14 @@ class PlantsView(APIView):
         filename = path + str(data)
 
         if plants_serializer.is_valid():
-            plants_serializer.save()
-            predict(filename)
+            ps = plants_serializer.save()
+            identity = ps.id
+            result = predict(filename)
+            logger.warning(result)
+            obj = Plants.objects.get(id = identity)
+            obj.classification = result
+            logger.warning(obj.classification)
+            obj.save()
             return Response(plants_serializer.data, status=status.HTTP_201_CREATED)
         else:
             print('error', plants_serializer.errors)
@@ -68,7 +74,8 @@ def predict(file):
         if item == maximum_value:
             classification = classification_list[index]
 
-    logger.warning(classification)
+    return classification
+    # logger.warning(classification)
 
 
 def home(request):
