@@ -7,26 +7,30 @@ import ImageView from "./ImageView";
 // Required props: result
 class ResultsView extends Component {
   render() {
+    let classification = this.props.classification;
+    if (classification == "") {
+      classification = "Detected disease is shown here";
+    }
     return (
       <div>
-        <section className="resultsSection">
+        <section id="resultsSection" className="resultsSection">
           <div className="container">
             <div className="titleLine"></div>
             <h4>Your plant report</h4>
-            <ImageView imageUrl = {this.props.imageUrl}/>
+            <ImageView imageUrl={this.props.imageUrl} />
             <div className="resultsContainer">
               <div className="reportCard">
                 <h5>Disease detected</h5>
-                <h6>Bacterial spot</h6>
+                <h6>{classification}</h6>
                 <br />
                 <p>
                   Material on this page is for informational purposes only and
                   should not be constructed as treatment advice.
                 </p>
               </div>
-              <button className="downloadBtn" type="button" disabled>
-                Download Report
-              </button>
+              {/* <button className="downloadBtn" type="button" disabled>
+            Download Report
+            </button> */}
             </div>
           </div>
         </section>

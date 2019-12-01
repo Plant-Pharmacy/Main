@@ -24,6 +24,7 @@
     "@babel/preset-react": "^7.6.3",
     "babel-loader": "^8.0.6",
     "babel-plugin-transform-class-properties": "^6.24.1",
+    "file-loader": "^5.0.2",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.9"
   },
@@ -34,7 +35,6 @@
     "babel-preset-es2015": "^6.24.1",
     "bootstrap": "^4.3.1",
     "css-loader": "^3.2.0",
-    "file-loader": "^4.2.0",
     "jquery": "^3.4.1",
     "popper.js": "^1.16.0",
     "postcss-loader": "^3.0.0",

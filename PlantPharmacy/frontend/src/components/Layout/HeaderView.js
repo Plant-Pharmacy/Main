@@ -11,7 +11,6 @@ class HeaderView extends Component {
           <a className="navbar-brand mx-auto" href="#">
             <img src={logo} width="120" alt="logo" />
           </a>
-
           <div className="desktopFooter">
             <div className="container">
               <div className="d-flex flex-column justify-content-center align-items-center">

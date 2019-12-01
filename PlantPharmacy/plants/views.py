@@ -45,7 +45,7 @@ class PlantsView(APIView):
             ps = plants_serializer.save()
             identity = ps.id
             result = predict(filename)
-            obj = Plants.objects.get(id = identity)
+            obj = Plants.objects.get(id=identity)
             obj.classification = result
             obj.save()
             response = PlantSerializer(instance=obj).data
