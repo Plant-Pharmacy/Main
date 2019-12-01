@@ -2,6 +2,7 @@ from tensorflow.python.keras.models import load_model
 from tensorflow.python.keras.backend import set_session
 from keras.preprocessing import image
 from django.shortcuts import render
+from django.core import serializers
 from .disease_classification import classification_list
 import tensorflow as tf
 import numpy as np
@@ -34,6 +35,7 @@ class PlantsView(APIView):
 
     def post(self, request, *args, **kwargs):
         plants_serializer = PlantSerializer(data=request.data)
+        logger.warning(type(plants_serializer))
         data = request.FILES['plantImage']
         path = os.path.abspath('../PlantPharmacy/media/images/ ')
         path = path.strip()
@@ -43,12 +45,11 @@ class PlantsView(APIView):
             ps = plants_serializer.save()
             identity = ps.id
             result = predict(filename)
-            logger.warning(result)
             obj = Plants.objects.get(id = identity)
             obj.classification = result
-            logger.warning(obj.classification)
             obj.save()
-            return Response(plants_serializer.data, status=status.HTTP_201_CREATED)
+            response = PlantSerializer(instance=obj).data
+            return Response(response, status=status.HTTP_201_CREATED)
         else:
             print('error', plants_serializer.errors)
             return Response(plants_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
