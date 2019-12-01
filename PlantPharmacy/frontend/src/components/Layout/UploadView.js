@@ -1,9 +1,5 @@
 import React, { Component } from "react";
 
-// Receives image from user
-
-// required prop: PhotoController
-
 class UploadView extends Component {
   render() {
     return (
@@ -24,7 +20,7 @@ class UploadView extends Component {
               required
             />
             <label className="uploadBtnLabel" htmlFor="formId">
-              Upload
+              Upload Image
             </label>
           </div>
 

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import reportPlant from "../../imgs/reportPlantPlaceHolder.jpg";
 // Displays image back to user
 
 // Required props: image
@@ -10,11 +10,16 @@ class ImageView extends Component {
 
   // displays image
   render() {
+    let imageUrl = this.props.imageUrl;
+    if (imageUrl == "") {
+      imageUrl = reportPlant;
+    }
+
     return (
       <div>
-        {/* uploadview passes uploaded image url as props */}
+        {/* resultsview passes uploaded image url as props */}
         <div className="displayedImageContainer">
-          <img src={this.props.imageUrl} className="displayedImage" />
+          <img src={imageUrl} className="displayedImage" />
         </div>
       </div>
     );

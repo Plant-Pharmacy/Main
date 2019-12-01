@@ -1,5 +1,7 @@
-// import React, { Component } from "react";
-// import { PopupboxManager, PopupboxContainer } from "react-popupbox";
+import React, { Component } from "react";
+
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
 
 class ErrorView extends Component {
   constructor(props) {
@@ -8,22 +10,18 @@ class ErrorView extends Component {
       show: false
     };
   }
-
+  UNSAFE_componentWillReceiveProps = nextProps => {
+    this.setState({ show: nextProps.sizeError });
+  };
   // Handles Error Modal toggle
   handleModal() {
     this.setState({ show: !this.state.show });
   }
+
   // Renders Error modal
   render() {
     return (
       <div>
-        <Button
-          onClick={() => {
-            this.handleModal();
-          }}
-        >
-          Test
-        </Button>
         <Modal
           className="myError"
           id="imageSizeError"
@@ -36,8 +34,8 @@ class ErrorView extends Component {
           <Modal.Header closeButton>Error: Invalid file size</Modal.Header>
           <Modal.Body>
             <p>
-              Please upload an image with a file that is no less than 1440x1080
-              pixels, 3.1 MP and no more than 4032x3024 pixels, 10 MP
+              Please upload an image with a file size that is no less than 10 KB
+              and no more than 2 MB.
             </p>
           </Modal.Body>
         </Modal>
@@ -45,61 +43,5 @@ class ErrorView extends Component {
     );
   }
 }
-
-//testing out functions
-// import React, { Component } from "react";
-// import { PopupboxManager, PopupboxContainer } from "react-popupbox";
-
-// export class ErrorView extends Component {
-//   constructor(props) {
-//     super(props);
-//     this.state = {
-//       show: false
-//     };
-//   }
-//   //   Error variables
-//   errorTitleImageSize = "Error: Invalid file size";
-//   errorMessageImageSize =
-//     "Please upload an image with a file that is no less than 1440x1080pixels, 3.1 MP and no more than 4032x3024 pixels, 10 MP";
-//   errorTitleFileType = "Error: Invalid file type";
-//   errorMessageFileType = "Please upload either a .JPG or .PNG image";
-
-//   // Error title
-//   popupboxConfig = {
-//     titleBar: {
-//       enable: true,
-//       text: "Error"
-//     },
-//     fadeIn: true,
-//     fadeInSpeed: 500
-//   };
-//   // Error message container
-//   openPopupbox() {
-//     const content = (
-//       <div>
-//         <p></p>
-//       </div>
-//     );
-//     PopupboxManager.open({ content });
-//   }
-//   // Handles Error Modal
-//   handleErrorMessage(message) {
-//     this.openPopupbox.content = message;
-//     console.log("this is openPopupbox");
-//     console.log(this.openPopupbox);
-//     return this.openPopupbox;
-//   }
-
-//   render() {
-//     return (
-//       <div>
-//         <button onClick={this.handleErrorMessage(this.errorMessageFileType)}>
-//           Click me
-//         </button>
-//         <PopupboxContainer {...this.popupboxConfig} />
-//       </div>
-//     );
-//   }
-// }
 
 export default ErrorView;

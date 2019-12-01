@@ -9,7 +9,7 @@ urlpatterns = [
     path('', views.home, name='home'),
     path('plants/', views.PlantsView.as_view(), name='posts_list'),
 ]
-# this needs to be removed for development stage
+# this needs to be removed for production stage
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL,
                           document_root=settings.MEDIA_ROOT)

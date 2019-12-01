@@ -15,6 +15,7 @@
   --space-xl: 3.5em;
   --space-xxm: 5em;
   --space-xxl: 6.5em;
+  --space-xxxl: 12em;
   /* Desktop Sizes */
   --desktop-space-xs: 0.5em;
   --desktop-space-sm: 1em;
@@ -34,7 +35,9 @@
   --text-scale-ratio: 1.2;
   --text-xs: calc((1em / var(--text-scale-ratio)) / var(--text-scale-ratio));
   --text-sm: calc(var(--text-xs) * var(--text-scale-ratio));
-  --text-md: calc( var(--text-sm) * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-md: calc(
+    var(--text-sm) * var(--text-scale-ratio) * var(--text-scale-ratio)
+  );
   --text-lg: calc(var(--text-md) * var(--text-scale-ratio));
   --text-xl: calc(var(--text-lg) * var(--text-scale-ratio));
   --text-xxl: calc(var(--text-xl) * var(--text-scale-ratio));
@@ -106,7 +109,8 @@ h3 .heroHeader {
   font-weight: 800;
 }
 
-body h3, body h4 {
+body h3,
+body h4 {
   color: var(--headers-black);
   font-family: var(--font-primary);
   font-weight: 300;
@@ -148,8 +152,9 @@ input[type="file"] {
   width: 100%;
   text-align: center;
   font-family: var(--font-primary);
+  font-weight: 500;
   color: var(--headers-black);
-  background-color: var(--color-secondary);
+  background-color: var(--white);
 }
 
 .uploadBtn {
@@ -162,18 +167,19 @@ input[type="file"] {
   border-right: none;
   border-bottom: none;
   font-family: var(--font-primary);
-  color: var(--white);
-  background-color: var(--color-primary);
+  font-weight: 500;
+  color: var(--headers-black);
+  background-color: var(--white);
 }
 
-.downloadBtn {
+/* .downloadBtn {
   width: 100%;
   text-align: center;
   height: var(--space-xl);
   background-color: var(--color-secondary);
   border-radius: 5px;
   font-weight: 600;
-}
+} */
 
 /* Footer */
 
@@ -181,7 +187,7 @@ footer {
   border: none;
   background-color: var(--color-primary);
   padding-top: var(--space-xl);
-  padding-bottom: var(--space-xxl);
+  padding-bottom: var(--space-xxxl);
 }
 
 .githublogo {
