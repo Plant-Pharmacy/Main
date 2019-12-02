@@ -9,7 +9,7 @@ class ResultsView extends Component {
   render() {
     let classification = this.props.classification;
     if (classification == "") {
-      classification = "Detected disease is shown here";
+      classification = "... prediction is shown here";
     }
     return (
       <div>

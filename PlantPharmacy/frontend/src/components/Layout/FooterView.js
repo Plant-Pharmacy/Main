@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import githublogo from "../../imgs/email_icon.svg";
-import emaillogo from "../../imgs/github_icon.svg";
+import emaillogo from "../../imgs/email_icon.svg";
+import githublogo from "../../imgs/github_icon.svg";
 
 class FooterView extends Component {
   state = {};

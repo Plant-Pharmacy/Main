@@ -8,9 +8,7 @@ class HeaderView extends Component {
     return (
       <header>
         <nav className="navbar">
-          <a className="navbar-brand mx-auto" href="#">
-            <img src={logo} width="120" alt="logo" />
-          </a>
+          <a className="navbar-brand mx-auto" href="#"></a>
           <div className="desktopFooter">
             <div className="container">
               <div className="d-flex flex-column justify-content-center align-items-center">

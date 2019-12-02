@@ -19,6 +19,7 @@ const initialState = {
   classification: "",
   errortest: false
 };
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -60,7 +61,7 @@ class App extends Component {
     if (!e.target.files[0]) {
       return;
     }
-    if (e.target.files[0].size > 2000000 || e.target.files[0].size < 10000) {
+    if (e.target.files[0].size > 5000000 || e.target.files[0].size < 10000) {
       this.setState({
         errortest: true
       });
@@ -82,6 +83,7 @@ class App extends Component {
           handleImageChange={this.handleImageChange}
           handleSubmit={this.handleSubmit}
         />
+        <section className="sectionDivdersvg"></section>
         <ResultsView
           imageUrl={this.state.imageUrl}
           classification={this.state.classification}
@@ -90,7 +92,7 @@ class App extends Component {
           key={this.state.errortest.id}
           sizeError={this.state.errortest}
         />
-
+        <section className="sectionDivdersvg2"></section>
         <FooterView />
       </div>
     );

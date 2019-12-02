@@ -35,9 +35,7 @@
   --text-scale-ratio: 1.2;
   --text-xs: calc((1em / var(--text-scale-ratio)) / var(--text-scale-ratio));
   --text-sm: calc(var(--text-xs) * var(--text-scale-ratio));
-  --text-md: calc(
-    var(--text-sm) * var(--text-scale-ratio) * var(--text-scale-ratio)
-  );
+  --text-md: calc( var(--text-sm) * var(--text-scale-ratio) * var(--text-scale-ratio));
   --text-lg: calc(var(--text-md) * var(--text-scale-ratio));
   --text-xl: calc(var(--text-lg) * var(--text-scale-ratio));
   --text-xxl: calc(var(--text-xl) * var(--text-scale-ratio));
@@ -80,7 +78,8 @@ header .navbar {
 
 .welcomeDetails {
   background-color: var(--color-secondary);
-  padding-top: var(--space-xxl);
+  padding-top: var(--space-lg2);
+  padding-bottom: var(--space-lg2);
   padding-right: var(--space-md);
   padding-left: var(--space-md);
   border-radius: 5px;
@@ -94,13 +93,13 @@ header .navbar {
   text-align: center;
   line-height: var(--body-line-height);
   /* image holde-to be removed*/
-  margin-bottom: 210px;
+  margin-bottom: var(--space-lg);
 }
 
 .welcomeWrapper .uploadCaption {
   text-align: center;
-  font-size: var(--text-xs);
-  color: var(--bodytext-black);
+  font-size: var(--text-sm);
+  color: var(--color-primary);
   margin: 0;
 }
 
@@ -109,8 +108,7 @@ h3 .heroHeader {
   font-weight: 800;
 }
 
-body h3,
-body h4 {
+body h3, body h4 {
   color: var(--headers-black);
   font-family: var(--font-primary);
   font-weight: 300;
@@ -153,8 +151,9 @@ input[type="file"] {
   text-align: center;
   font-family: var(--font-primary);
   font-weight: 500;
-  color: var(--headers-black);
-  background-color: var(--white);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  color: var(--white);
+  background-color: var(--color-primary);
 }
 
 .uploadBtn {
@@ -170,6 +169,24 @@ input[type="file"] {
   font-weight: 500;
   color: var(--headers-black);
   background-color: var(--white);
+}
+
+.sectionDivdersvg {
+  min-height: var(--space-xxm);
+  font-size: 0;
+  background-image: url('../imgs/sectionDivdersvg1.svg');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sectionDivdersvg2 {
+  min-height: var(--space-xxm);
+  font-size: 0;
+  background-image: url('../imgs/sectionDivdersvg2.svg');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* .downloadBtn {
@@ -196,8 +213,8 @@ footer {
 
 .copyright {
   font-weight: 700;
-  font-size: var(--text-sm);
-  color: var(--welcomeSection-BKG);
+  font-size: var(--text-xs);
+  color: #546759;
   padding-top: var(--space-lg2);
 }
 
@@ -237,6 +254,7 @@ footer {
 
 .titleLine {
   border-top: 3px solid white;
+  border-radius: 10px;
   width: 50px;
   margin-bottom: var(--space-md);
 }
@@ -259,7 +277,8 @@ footer {
 }
 
 .reportCard p {
-  font-size: x-small;
+  font-weight: 300;
+  font-size: var(--text-xs);
   margin-bottom: 0;
 }
 

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import UploadView from "./UploadView";
+import heroAi from "../../imgs/heroAi.svg";
 class WelcomeView extends Component {
   render() {
     return (
@@ -17,7 +18,7 @@ class WelcomeView extends Component {
                   the disease detected, allowing you to treat your plants more
                   confidently.
                 </p>
-                <img />
+                <img src={heroAi} />
                 <UploadView
                   handleImageChange={this.props.handleImageChange}
                   handleSubmit={this.props.handleSubmit}
@@ -25,7 +26,7 @@ class WelcomeView extends Component {
               </div>
               <p className="uploadCaption">
                 For best results, upload an image (JPG or PNG) that’s close to
-                the subject and between 1MB and 10MB in size.
+                the subject & between 10KB and 5MB in size.
               </p>
             </div>
           </div>

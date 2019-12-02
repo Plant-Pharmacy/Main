@@ -20,11 +20,11 @@ class UploadView extends Component {
               required
             />
             <label className="uploadBtnLabel" htmlFor="formId">
-              Upload Image
+              Choose Image
             </label>
           </div>
 
-          <button className="uploadBtn">Submit</button>
+          <button className="uploadBtn">Upload</button>
         </form>
       </div>
     );
