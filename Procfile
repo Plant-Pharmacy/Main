@@ -1,1 +1,1 @@
-web: gunicorn plantPharmacy.wsgi --log-file -
+web: gunicorn PlantPharmacy.wsgi --log-file -
