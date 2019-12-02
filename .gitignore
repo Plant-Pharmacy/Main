@@ -1,5 +1,6 @@
 node_modules
 ### Django ###
+*.hdf5
 *.log
 *.pot
 *.pyc
