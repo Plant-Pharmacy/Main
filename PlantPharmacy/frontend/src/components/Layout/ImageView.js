@@ -16,11 +16,9 @@ class ImageView extends Component {
     }
 
     return (
-      <div>
+      <div className="displayedImageContainer">
         {/* resultsview passes uploaded image url as props */}
-        <div className="displayedImageContainer">
-          <img src={imageUrl} className="displayedImage" />
-        </div>
+        <img src={imageUrl} className="displayedImage" />
       </div>
     );
   }

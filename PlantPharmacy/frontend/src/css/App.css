@@ -92,7 +92,6 @@ header .navbar {
   color: var(--bodytext-black);
   text-align: center;
   line-height: var(--body-line-height);
-  /* image holde-to be removed*/
   margin-bottom: var(--space-lg);
 }
 
@@ -138,16 +137,15 @@ input[type="file"] {
   pointer-events: none;
 }
 
-.lableBtn {
+/* .lableBtn {
   padding-top: var(--space-xl);
-}
+} */
 
 .uploadBtnLabel {
   padding-top: var(--space-sm);
   padding-bottom: var(--space-sm);
   display: block;
   margin: 0;
-  width: 100%;
   text-align: center;
   font-family: var(--font-primary);
   font-weight: 500;
@@ -158,7 +156,6 @@ input[type="file"] {
 
 .uploadBtn {
   margin: 0;
-  width: 100%;
   height: var(--space-xl);
   text-align: center;
   border-top: 1px solid var(--resultsSection-BKG);
@@ -224,11 +221,6 @@ footer {
   padding-top: var(--space-xxm);
   padding-bottom: var(--space-xxm);
   background-color: var(--resultsSection-BKG);
-  /* min-height: 1080px;
-  background-image: url("../imgs/results_BKG.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 100%; */
 }
 
 /* ImageView Section */
@@ -262,7 +254,7 @@ footer {
 /* resultsViewSection */
 
 .resultsContainer {
-  padding: var(--space-lg) 0;
+  padding: var(--space-xl) 0;
 }
 
 .reportCard {
@@ -282,58 +274,83 @@ footer {
   margin-bottom: 0;
 }
 
-/* @media (min-width: 1280px) {
+.uploadCaption_dskt {
+  display: none;
+}
+
+/*---------------------------- Desktop and up  */
+
+@media(min-width: 1281px) {
   :root {
     --text-scale-ratio: 1.5;
-  }
-  .navWrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  header .navbar {
-    display: block;
-  }
-  .desktopFooter {
-    display: block;
-  }
- 
-  .welcomeSection {
-    background-color: var(--color-primary);
-  }
-  .welcomeWrapper {
-    text-align: start;
-  }
-  .welcomeDetails {
-    margin-top: 7em;
-    margin-bottom: var(--space-lg2);
-    padding-left: var(--space-lg3);
-    padding-right: var(--space-lg3);
-    position: static;
-    width: 30em;
-  }
-  .welcomeDetails p {
-    text-align: start;
-  }
-  body h3 {
-    text-align: start;
-    margin-bottom: var(--space-md);
-  }
-  .resultsSection {
-    width: 50em;
-    border-radius: 5px;
-    min-height: 48em;
   }
   .titleLine {
     width: 75px;
   }
-  .reportCard {
-    width: 15em;
+  .welcomeDetails {
+    display: flex;
+    flex-direction: row;
+    padding-top: var(--space-xxl);
+    padding-bottom: var(--space-xxl);
+    padding-right: var(--space-lg3);
+    padding-left: var(--space-lg3);
   }
-  .downloadBtn {
+  .heroLeftContentWrapper_dskp {
+    flex-basis: 60%;
+  }
+  .formMobile {
+    flex-direction: row;
+    position: static;
+    margin-bottom: var(--space-lg);
+  }
+  .uploadCaption {
     display: none;
+  }
+  .uploadCaption_dskt {
+    display: block;
+    text-align: left;
+    font-size: var(--text-sm);
+    color: var(--color-primary);
+  }
+  .heroGirl {
+    flex-basis: 40%;
+  }
+  body h3 {
+    text-align: left;
+    margin-bottom: var(--space-sm);
+  }
+  .welcomeDetails p {
+    text-align: left;
+    margin-bottom: var(--space-xxm);
+  }
+  .uploadBtnLabel {
+    cursor: pointer;
+    width: var(--space-xxxl);
+    margin-right: var(--space-md);
+    color: var(--white);
+    background-color: var(--headers-black);
+    border-radius: 5px;
+  }
+  .uploadBtn {
+    width: var(--space-xxxl);
+    color: var(--white);
+    background-color: var(--headers-black);
+    border: none;
+    border-radius: 5px;
+  }
+  .reportWrapper_dskt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .displayedImageContainer {
+    flex-basis: 40%;
   }
   footer {
-    display: none;
+    padding-top: var(--space-md);
+    padding-bottom: var(--space-md);
   }
-} */
+  .copyright {
+    font-size: var(--text-sm);
+  }
+}

@@ -17,20 +17,22 @@ class ResultsView extends Component {
           <div className="container">
             <div className="titleLine"></div>
             <h4>Your plant report</h4>
-            <ImageView imageUrl={this.props.imageUrl} />
-            <div className="resultsContainer">
-              <div className="reportCard">
-                <h5>Disease detected</h5>
-                <h6>{classification}</h6>
-                <br />
-                <p>
-                  Material on this page is for informational purposes only and
-                  should not be constructed as treatment advice.
-                </p>
-              </div>
-              {/* <button className="downloadBtn" type="button" disabled>
+            <div className="reportWrapper_dskt">
+              <ImageView imageUrl={this.props.imageUrl} />
+              <div className="resultsContainer">
+                <div className="reportCard">
+                  <h5>Disease detected</h5>
+                  <h6>{classification}</h6>
+                  <br />
+                  <p>
+                    Material on this page is for informational purposes only and
+                    should not be constructed as treatment advice.
+                  </p>
+                </div>
+                {/* <button className="downloadBtn" type="button" disabled>
             Download Report
             </button> */}
+              </div>
             </div>
           </div>
         </section>
