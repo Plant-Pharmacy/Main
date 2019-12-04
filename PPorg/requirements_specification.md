@@ -5,14 +5,15 @@
 # Requirements
 
 ## Image upload
-- ``{Complete}`` The user is able to upload an image of a plant with a potential disease by tapping/clicking on the “upload” button
+- The user is able to upload an image of a plant with a potential disease by tapping/clicking on the “upload” button
+    - ``{Revised: it is a lot easier to implement two types of functionality (uploading and submitting) with two buttons. Combining both functions into one button will require more time and research.}``
     - Image upload requirements:
-        - ``{Revised}``The file type should be either a (.png) or (.jpg)
-            - ``{This is a revised requirement because the form used to process uploaded images will only allow for .png or .jpg file types}``
+        - The file type should be either a (.png) or (.jpg)
+            - ``{Revised: The form used to process uploaded images will only allow for .png or .jpg file types}``
         - ``{Complete}``The file size should be no less than 1440x1080 pixels, 3.1 MP and no more than 4032x3024 pixels, 10 MP
 
 ## Uploaded image data
-- When file size and type requirements are satisfied, the user uploaded image should be stored in the database.
+- ``Complete``When file size and type requirements are satisfied, the user uploaded image should be stored in the database.
 
 ## Processing
 - After the user uploaded image is stored in the database,  an API Request POST should be made with the user uploaded image address found in the database.
