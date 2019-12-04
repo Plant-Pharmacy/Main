@@ -6,7 +6,7 @@
 
 ## Image upload
 - The user is able to upload an image of a plant with a potential disease by tapping/clicking on the “upload” button
-    - ``{Revised: Combining two types of functionality (uploading and submitting) into one button is a lot more complicated than we thought and would require extra research. Implementing both functionalities within two buttons is a lot easier. It also allows for more descriptive actions and reduce UX friction.}``
+    - ``{Revised: Combining two types of functionality (uploading and submitting) into one button is a lot more complicated than we thought and would require extra research. Implementing both functionalities within two buttons is a lot simpler. It also allows for more descriptive actions and reduce UX friction.}``
     - Image upload requirements:
         - The file type should be either a (.png) or (.jpg)
             - ``{Revised: The form used to process uploaded images will only allow for .png or .jpg file types, therefore there is no need to notify the user of this issue}``
