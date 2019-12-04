@@ -36,9 +36,9 @@
         - Mobile view: The image should be a reduced size of 720x540 pixels and fitted and centered based on the width of the mobile device the user is using. 
         - Desktop view: The image should be a reduced size of 720x540 pixels and centered on the screen 
     - __Potential diseases will then be displayed within the “results” component__
-        - Results should be in a listed text format and should display the name of the disease.
+        - ``{Complete}`` Results should be in a listed text format and should display the name of the disease.
             - Example: “Your plant seems to have _disease name_”
-        -  If the image of the plant is detected to be healthy, then inform the user through text
+        -  ``{Complete}`` If the image of the plant is detected to be healthy, then inform the user through text
             - “Your plant seems to be healthy! No disease has been detected at the moment”
         - If no results are shown then an error message should display this message
             - “Sorry, we were unable to identify the plant or the disease at the moment. Please check out our tips for uploading clear images or visit us next time when our database has been updated”
