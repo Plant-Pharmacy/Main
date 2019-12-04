@@ -6,7 +6,7 @@
 
 ## Image upload
 - The user is able to upload an image of a plant with a potential disease by tapping/clicking on the “upload” button
-    - ``{Revised: it is a lot easier to implement two types of functionality (uploading and submitting) with two buttons. Combining both functions into one button will require more time and research.}``
+    - ``{Revised: Combining two types of functionality (uploading and submitting) into one button is a lot more complicated than we thought and would require extra research. Implementing both functionalities within two buttons is an easier solution.}``
     - Image upload requirements:
         - The file type should be either a (.png) or (.jpg)
             - ``{Revised: The form used to process uploaded images will only allow for .png or .jpg file types}``
@@ -20,9 +20,10 @@
 - Keras API should load pre-existing trained CNN model and apply builtin functions to classify the user-uploaded image.
 
 ## Results
-- Plant disease analysis results should returned as a JSON object via HTTP Response and injected as a string in the “results” component and displayed to the user.
+- ``{Complete}`` Plant disease analysis results should returned as a JSON object via HTTP Response and injected as a string in the “results” component and displayed to the user.
 - A __disclaimer__ should be displayed at the top of the “results” section at all times:
     - “Disclaimer: Results are based on data-driven predictions. This product does not intend to substitute as professional help nor does it reflect the range of diseases possible for a plant. Thank you”
+    - ``{Revised: Disclaimer would be written as "Material on this page is for informational purposes only and should not be constructed as treatment advice."}``
 - __Error Messages__
     - Warn the user with a pop-up message. The pop-up message should pop up in the middle of the screen, disabling and dimming everything behind it. Pop-up messages should only appear when the user-provided image cannot be processed. Possible errors would be when…
         - The file type is below or beyond the recommended file type. A pop-up should display this message: 
