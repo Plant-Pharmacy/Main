@@ -9,7 +9,7 @@
     - ``{Revised: Combining two types of functionality (uploading and submitting) into one button is a lot more complicated than we thought and would require extra research. Implementing both functionalities within two buttons is an easier solution.}``
     - Image upload requirements:
         - The file type should be either a (.png) or (.jpg)
-            - ``{Revised: The form used to process uploaded images will only allow for .png or .jpg file types, therefore there is no need to }``
+            - ``{Revised: The form used to process uploaded images will only allow for .png or .jpg file types, therefore there is no need to notify the user of this issue}``
         - ``{Complete}``The file size should be no less than 1440x1080 pixels, 3.1 MP and no more than 4032x3024 pixels, 10 MP
 
 ## Uploaded image data
