@@ -32,8 +32,8 @@ class ErrorView extends Component {
           <Modal.Header closeButton>Error: Invalid file size</Modal.Header>
           <Modal.Body>
             <p>
-              Please upload an image with a file size that is no less than 10KB
-              and no more than 2MB.
+              Please upload an image with a file size that is between 10KB and
+              5MB.
             </p>
           </Modal.Body>
         </Modal>

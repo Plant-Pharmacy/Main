@@ -35,7 +35,9 @@
   --text-scale-ratio: 1.2;
   --text-xs: calc((1em / var(--text-scale-ratio)) / var(--text-scale-ratio));
   --text-sm: calc(var(--text-xs) * var(--text-scale-ratio));
-  --text-md: calc( var(--text-sm) * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-md: calc(
+    var(--text-sm) * var(--text-scale-ratio) * var(--text-scale-ratio)
+  );
   --text-lg: calc(var(--text-md) * var(--text-scale-ratio));
   --text-xl: calc(var(--text-lg) * var(--text-scale-ratio));
   --text-xxl: calc(var(--text-xl) * var(--text-scale-ratio));
@@ -44,7 +46,9 @@
   --body-line-height: 1.5;
   --heading-line-height: 1.2;
 }
-
+::-webkit-scrollbar {
+  width: 0 !important;
+}
 html {
   margin: 0 !important;
   padding: 0 !important;
@@ -107,7 +111,8 @@ h3 .heroHeader {
   font-weight: 800;
 }
 
-body h3, body h4 {
+body h3,
+body h4 {
   color: var(--headers-black);
   font-family: var(--font-primary);
   font-weight: 300;
@@ -171,7 +176,7 @@ input[type="file"] {
 .sectionDivdersvg {
   min-height: var(--space-xxm);
   font-size: 0;
-  background-image: url('../imgs/sectionDivdersvg1.svg');
+  background-image: url("../imgs/sectionDivdersvg1.svg");
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -180,7 +185,7 @@ input[type="file"] {
 .sectionDivdersvg2 {
   min-height: var(--space-xxm);
   font-size: 0;
-  background-image: url('../imgs/sectionDivdersvg2.svg');
+  background-image: url("../imgs/sectionDivdersvg2.svg");
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -280,7 +285,7 @@ footer {
 
 /*---------------------------- Desktop and up  */
 
-@media(min-width: 1281px) {
+@media (min-width: 1281px) {
   :root {
     --text-scale-ratio: 1.5;
   }
@@ -309,7 +314,7 @@ footer {
   .uploadCaption_dskt {
     display: block;
     text-align: left;
-    font-size: var(--text-sm);
+    font-size: 0.8em;
     color: var(--color-primary);
   }
   .heroGirl {
@@ -342,6 +347,9 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+  }
+  .reportCard p {
+    font-size: var(--text-sm);
   }
   .displayedImageContainer {
     flex-basis: 40%;

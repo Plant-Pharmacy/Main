@@ -26,7 +26,8 @@ class WelcomeView extends Component {
                   />
                   <p className="uploadCaption_dskt">
                     For best results, upload an image (JPG or PNG) that’s close
-                    to the subject & between 10KB and 5MB in size.
+                    to the subject & between 10KB and 5MB in size. Once you've
+                    chosen an image tap on submit button to upload.
                   </p>
                 </div>
 
@@ -36,7 +37,8 @@ class WelcomeView extends Component {
               </div>
               <p className="uploadCaption">
                 For best results, upload an image (JPG or PNG) that’s close to
-                the subject & between 10KB and 5MB in size.
+                the subject & between 10KB and 5MB in size. Once you've chosen
+                an image tap on submit button to upload.
               </p>
             </div>
           </div>

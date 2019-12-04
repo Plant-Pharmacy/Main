@@ -24,7 +24,7 @@ class UploadView extends Component {
             </label>
           </div>
 
-          <button className="uploadBtn">Upload</button>
+          <button className="uploadBtn">Submit</button>
         </form>
       </div>
     );

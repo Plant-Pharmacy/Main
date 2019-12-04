@@ -26,12 +26,10 @@ class ResultsView extends Component {
                   <br />
                   <p>
                     Material on this page is for informational purposes only and
+                    <br />
                     should not be constructed as treatment advice.
                   </p>
                 </div>
-                {/* <button className="downloadBtn" type="button" disabled>
-            Download Report
-            </button> */}
               </div>
             </div>
           </div>
