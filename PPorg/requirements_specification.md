@@ -25,7 +25,7 @@
     - “Disclaimer: Results are based on data-driven predictions. This product does not intend to substitute as professional help nor does it reflect the range of diseases possible for a plant. Thank you”
     - ``{Revised: Disclaimer would be written as "Material on this page is for informational purposes only and should not be constructed as treatment advice."}``
 - __Error Messages__
-    - Warn the user with a pop-up message. The pop-up message should pop up in the middle of the screen, disabling and dimming everything behind it. Pop-up messages should only appear when the user-provided image cannot be processed. Possible errors would be when…
+    - ``{Complete}``Warn the user with a pop-up message. The pop-up message should pop up in the middle of the screen, disabling and dimming everything behind it. Pop-up messages should only appear when the user-provided image cannot be processed. Possible errors would be when…
         - The file type is below or beyond the recommended file type. A pop-up should display this message: 
             - “Invalid file type. Please upload either a .JPG or .PNG image”
             - ``{Revised: The form used to process uploaded images will only allow for .png or .jpg file types, therefore there is no need to notify the user of this issue}``
