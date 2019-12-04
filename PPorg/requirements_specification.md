@@ -28,7 +28,8 @@
     - Warn the user with a pop-up message. The pop-up message should pop up in the middle of the screen, disabling and dimming everything behind it. Pop-up messages should only appear when the user-provided image cannot be processed. Possible errors would be when…
         - The file type is below or beyond the recommended file type. A pop-up should display this message: 
             - “Invalid file type. Please upload either a .JPG or .PNG image”
-        - The file size is below or beyond the recommended file size. A pop-up should display this message: 
+            - ``{Revised: The form used to process uploaded images will only allow for .png or .jpg file types, therefore there is no need to notify the user of this issue}``
+        - ``{Complete}``The file size is below or beyond the recommended file size. A pop-up should display this message: 
             - “Invalid file size. Please upload an image with a file that is no less than 1440x1080 pixels, 3.1 MP and no more than 4032x3024 pixels, 10 MP”
 - __Once the user has uploaded the image__
     - __The image will then be displayed to the user within the “results” component__
