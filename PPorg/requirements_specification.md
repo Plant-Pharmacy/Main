@@ -8,7 +8,7 @@
 - ``{Complete}`` The user is able to upload an image of a plant with a potential disease by tapping/clicking on the “upload” button
     - Image upload requirements:
         - ``{Revised}``The file type should be either a (.png) or (.jpg)
-            - {This is a revised requirement because the form used to process uploaded images will only allow for .png or .jpg file types}
+            - ``{This is a revised requirement because the form used to process uploaded images will only allow for .png or .jpg file types}``
         - ``{Complete}``The file size should be no less than 1440x1080 pixels, 3.1 MP and no more than 4032x3024 pixels, 10 MP
 
 ## Uploaded image data
