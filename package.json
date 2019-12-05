@@ -4,8 +4,8 @@
   "description": "<p align=\"center\">     <img src=\"./Images/logo.png\" width=\"60%\"> </p>",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --mode development --watch ./PlantPharmacy/frontend/src/index.js --output ./PlantPharmacy/frontend/static/frontend/main.js",
-    "build": "webpack --mode production ./PlantPharmacy/frontend/src/index.js --output ./PlantPharmacy/frontend/static/frontend/main.js"
+    "dev": "webpack --mode development --watch ./frontend/src/index.js --output ./frontend/static/frontend/main.js",
+    "build": "webpack --mode production ./frontend/src/index.js --output ./frontend/static/frontend/main.js"
   },
   "repository": {
     "type": "git",
