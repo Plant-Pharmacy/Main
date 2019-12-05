@@ -10,7 +10,7 @@
     - Image upload requirements:
         - The file type should be either a (.png) or (.jpg)
             - ``{Impossible: The form used to process uploaded images will only allow for .png or .jpg file types, therefore there will never be an instance when this error would occur. There is no need for this error popup.}``
-        - ``{Complete}``The file size should be no less than 1440x1080 pixels, 3.1 MP and no more than 4032x3024 pixels, 10 MP
+        - ``{Complete}``The file size should be no less than 5 MP and no more than 10 MP
 
 ## Uploaded image data
 - ``{Complete}``When file size and type requirements are satisfied, the user uploaded image should be stored in the database.
