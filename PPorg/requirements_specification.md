@@ -9,27 +9,27 @@
     - ``{Revised: Combining two types of functionality (uploading and submitting) into one button is a lot more complicated than we thought and would require extra research. Implementing both functionalities within two buttons is a lot simpler. It also allows for more descriptive actions and reduce UX friction.}``
     - Image upload requirements:
         - The file type should be either a (.png) or (.jpg)
-            - ``{Revised: The form used to process uploaded images will only allow for .png or .jpg file types, therefore there is no need to notify the user of this issue}``
+            - ``{Impossible: The form used to process uploaded images will only allow for .png or .jpg file types, therefore there will never be an instance when this error would occur. There is no need for this error popup.}``
         - ``{Complete}``The file size should be no less than 1440x1080 pixels, 3.1 MP and no more than 4032x3024 pixels, 10 MP
 
 ## Uploaded image data
 - ``{Complete}``When file size and type requirements are satisfied, the user uploaded image should be stored in the database.
 
 ## Processing
-- After the user uploaded image is stored in the database,  an API Request POST should be made with the user uploaded image address found in the database.
-- Keras API should load pre-existing trained CNN model and apply builtin functions to classify the user-uploaded image.
+- ``{Complete}``After the user uploaded image is stored in the database,  an API Request POST should be made with the user uploaded image address found in the database.
+- ``{Complete}``Keras API should load pre-existing trained CNN model and apply builtin functions to classify the user-uploaded image.
 
 ## Results
 - ``{Complete}`` Plant disease analysis results should returned as a JSON object via HTTP Response and injected as a string in the “results” component and displayed to the user.
-- ``{Complete}`` A __disclaimer__ should be displayed at the top of the “results” section at all times:
+- ``{Complete}`` A __disclaimer__ should be displayed at the bottom of the “resultscontainer" at all times:
     - Disclaimer: "Material on this page is for informational purposes only and should not be constructed as treatment advice."
 - __Error Messages__
     - ``{Complete}``Warn the user with a pop-up message. The pop-up message should pop up in the middle of the screen, disabling and dimming everything behind it. Pop-up messages should only appear when the user-provided image cannot be processed. Possible errors would be when…
         - The file type is below or beyond the recommended file type. A pop-up should display this message: 
             - “Invalid file type. Please upload either a .JPG or .PNG image”
-            - ``{Revised: The form used to process uploaded images will only allow for .png or .jpg file types, therefore there is no need to notify the user of this issue}``
+            - ``{Impossible: The form used to process uploaded images will only allow for .png or .jpg file types, therefore there will never be an instance when this error would occur. There is no need for this error popup.}``
         - ``{Complete}``The file size is below or beyond the recommended file size. A pop-up should display this message: 
-            - “Invalid file size. Please upload an image with a file that is no less than 1440x1080 pixels, 3.1 MP and no more than 4032x3024 pixels, 10 MP”
+            - "Please upload an image with a file size that is between 10KB and 5MB.4032x3024 pixels, 10 MP”
 - __Once the user has uploaded the image__
     - __The image will then be displayed to the user within the “results” component__
         - ``{Complete}``Mobile view: The image should be fitted and centered based on the width of the mobile device the user is using. 
