@@ -25,6 +25,7 @@ model = load_model('plants/AlexNetModel.hdf5')
 graph = tf.get_default_graph()
 
 
+
 class PlantsView(APIView):
     parser_classes = (MultiPartParser, FormParser)
 
@@ -34,16 +35,17 @@ class PlantsView(APIView):
         return Response(serializer.data)
 
     def post(self, request, *args, **kwargs):
+        BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
         plants_serializer = PlantSerializer(data=request.data)
         logger.warning(type(plants_serializer))
         data = request.FILES['plantImage']
-        path = os.path.abspath('../Main/media/images/ ')
-        path = path.strip()
-
-        data = str(data).strip().replace(' ', '_')
-        data = data.strip().replace('(', '')
-        data = data.strip().replace(')', '')
-        filename = os.path.join(path, str(data))
+        path = os.path.join(BASE_DIR,'media','images')
+		
+        clean_data = str(data).strip().replace(' ', '_')
+        clean_data = clean_data.replace('(', '')
+        clean_data = clean_data.replace(')', '')
+ 
+        filename = os.path.join(path, clean_data)
 
         if plants_serializer.is_valid():
             ps = plants_serializer.save()
