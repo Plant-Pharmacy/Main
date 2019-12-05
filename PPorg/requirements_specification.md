@@ -10,7 +10,7 @@
     - Image upload requirements:
         - The file type should be either a (.png) or (.jpg)
             - ``{Impossible: The form used to process uploaded images will only allow for .png or .jpg file types, therefore there will never be an instance when this error would occur. There is no need for this error popup.}``
-        - ``{Complete}``The file size should be no less than 5 MP and no more than 10 MP
+        - ``{Complete}``The file size should be no less than 5 KB and no more than 10 MP
 
 ## Uploaded image data
 - ``{Complete}``When file size and type requirements are satisfied, the user uploaded image should be stored in the database.
@@ -29,7 +29,7 @@
             - “Invalid file type. Please upload either a .JPG or .PNG image”
             - ``{Impossible: The form used to process uploaded images will only allow for .png or .jpg file types, therefore there will never be an instance when this error would occur. There is no need for this error popup.}``
         - ``{Complete}``The file size is below or beyond the recommended file size. A pop-up should display this message: 
-            - "Please upload an image with a file size that is between 10KB and 5MB.4032x3024 pixels, 10 MP”
+            - "Please upload an image with a file size that is between 10KB and 5KB.4032x3024 pixels, 10 MP”
 - __Once the user has uploaded the image__
     - __The image will then be displayed to the user within the “results” component__
         - ``{Complete}``Mobile view: The image should be fitted and centered based on the width of the mobile device the user is using. 
