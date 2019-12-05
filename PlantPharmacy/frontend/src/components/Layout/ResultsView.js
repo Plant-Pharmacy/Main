@@ -10,6 +10,31 @@ class ResultsView extends Component {
     let classification = this.props.classification;
     if (classification == "") {
       classification = "... prediction is shown here";
+    } else {
+      let plantName = classification.substr(0, classification.indexOf(" "));
+      let plantResult = classification.substr(classification.indexOf(" ") + 1);
+      let classificationUdate = [
+        plantName.toLowerCase(),
+        plantResult
+          .toLowerCase()
+          .split("_")
+          .join(" ")
+      ];
+      console.log(classificationUdate);
+      if (
+        classificationUdate[1] == "healthy" ||
+        classificationUdate == "Healthy"
+      ) {
+        classification =
+          "Your plant seems to be healthy! No disease has been detected at the moment.";
+      } else {
+        classification =
+          "Your " +
+          classificationUdate[0] +
+          " seems to have " +
+          classificationUdate[1] +
+          "s.";
+      }
     }
     return (
       <div>
@@ -21,17 +46,15 @@ class ResultsView extends Component {
               <ImageView imageUrl={this.props.imageUrl} />
               <div className="resultsContainer">
                 <div className="reportCard">
-                  <h5>Disease detected</h5>
+                  <h5>Prediction</h5>
                   <h6>{classification}</h6>
                   <br />
                   <p>
                     Material on this page is for informational purposes only and
+                    <br />
                     should not be constructed as treatment advice.
                   </p>
                 </div>
-                {/* <button className="downloadBtn" type="button" disabled>
-            Download Report
-            </button> */}
               </div>
             </div>
           </div>

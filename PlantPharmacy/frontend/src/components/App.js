@@ -61,7 +61,7 @@ class App extends Component {
     if (!e.target.files[0]) {
       return;
     }
-    if (e.target.files[0].size > 5000000 || e.target.files[0].size < 10000) {
+    if (e.target.files[0].size > 5100000 || e.target.files[0].size < 10000) {
       this.setState({
         errortest: true
       });

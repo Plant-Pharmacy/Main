@@ -39,6 +39,10 @@ class PlantsView(APIView):
         data = request.FILES['plantImage']
         path = os.path.abspath('../PlantPharmacy/media/images/ ')
         path = path.strip()
+
+        data = str(data).strip().replace(' ', '_')
+        data = data.strip().replace('(', '')
+        data = data.strip().replace(')', '')
         filename = os.path.join(path, str(data))
 
         if plants_serializer.is_valid():
