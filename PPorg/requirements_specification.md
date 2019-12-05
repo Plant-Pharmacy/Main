@@ -41,5 +41,5 @@
             - “Your plant seems to be healthy! No disease has been detected at the moment”
         - If no results are shown then an error message should display this message
             - “Sorry, we were unable to identify the plant or the disease at the moment. Please check out our tips for uploading clear images or visit us next time when our database has been updated”
-            - ``{Impossible: Unfortunately, we have no control over what the model. It seems like the model will always respond as if the image uploaded is a plant when it clearly isn't.}``
+            - ``{Impossible: Unfortunately, we have no control over what the model does and its functionality. It seems like the model will always respond as if the image uploaded is a plant when it clearly isn't, the model is not equipped to identify if the image is a plant or not.}``
 
