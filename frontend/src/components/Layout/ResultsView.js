@@ -20,7 +20,6 @@ class ResultsView extends Component {
           .split("_")
           .join(" ")
       ];
-      console.log(classificationUdate);
       if (
         classificationUdate[1] == "healthy" ||
         classificationUdate == "Healthy"
@@ -39,9 +38,9 @@ class ResultsView extends Component {
     return (
       <div>
         <section id="resultsSection" className="resultsSection">
-          <div className="container">
+          <div className="mainContainer container">
             <div className="titleLine"></div>
-            <h4>Your plant report</h4>
+            <h4>Plant health report</h4>
             <div className="reportWrapper_dskt">
               <ImageView imageUrl={this.props.imageUrl} />
               <div className="resultsContainer">
@@ -50,8 +49,8 @@ class ResultsView extends Component {
                   <h6>{classification}</h6>
                   <br />
                   <p>
+                    Please note, prediction accuracy is subject to change.
                     Material on this page is for informational purposes only and
-                    <br />
                     should not be constructed as treatment advice.
                   </p>
                 </div>

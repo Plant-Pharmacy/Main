@@ -26,7 +26,9 @@ class App extends Component {
     this.state = initialState;
   }
   reset() {
-    this.setState(initialState);
+    this.setState({
+      errortest: initialState.errortest
+    });
   }
 
   handleSubmit = e => {
@@ -50,9 +52,14 @@ class App extends Component {
             imageUrl: res.data.plantImage,
             classification: res.data.classification
           });
+
+          // scrolls to results while the image is being uploaded
+          window.scroll({
+            top: 800,
+            behavior: "smooth"
+          });
         })
         .catch(err => console.log(err));
-      console.log(this.state);
     }
   };
 
@@ -73,9 +80,6 @@ class App extends Component {
   };
 
   render() {
-    // if (this.state.errortest == "") {
-    //   document.getElementById("resultsSection").style.display = "none";
-    // }
     return (
       <div>
         <HeaderView />

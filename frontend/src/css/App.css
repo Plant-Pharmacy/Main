@@ -27,8 +27,6 @@
   --desktop-space-xxm: 5em;
   --desktop-space-xxl: 6.5em;
   --font-primary: Muli;
-  /* // font family */
-  --font-primary: Muli;
   /* // body font size */
   --text-base-size: 1em;
   /* // type scale */
@@ -46,9 +44,11 @@
   --body-line-height: 1.5;
   --heading-line-height: 1.2;
 }
+
 ::-webkit-scrollbar {
   width: 0 !important;
 }
+
 html {
   margin: 0 !important;
   padding: 0 !important;
@@ -59,6 +59,21 @@ body {
   padding: 0px !important;
   font-family: var(--font-primary);
   font-weight: normal;
+}
+
+/* Axios Loader */
+
+#nprogress .bar {
+  background: greenyellow !important;
+  height: 4px;
+}
+
+#nprogress .peg {
+  box-shadow: 0 0 10px greenyellow, 0 0 5px greenyellow !important;
+}
+#nprogress .spinner-icon {
+  border-top-color: greenyellow !important;
+  border-left-color: greenyellow !important;
 }
 
 /* Header */
@@ -100,12 +115,14 @@ header .navbar {
 }
 
 .welcomeWrapper .uploadCaption {
-  text-align: center;
+  text-align: left;
   font-size: var(--text-sm);
   color: var(--color-primary);
   margin: 0;
 }
-
+.heroGirlImg {
+  max-height: 400px;
+}
 h3 .heroHeader {
   font-family: var(--font-primary);
   font-weight: 800;
@@ -155,8 +172,8 @@ input[type="file"] {
   font-family: var(--font-primary);
   font-weight: 500;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-  color: var(--white);
-  background-color: var(--color-primary);
+  color: var(--headers-black);
+  background-color: var(--white);
 }
 
 .uploadBtn {
@@ -223,20 +240,21 @@ footer {
 /* Results Section */
 
 .resultsSection {
-  padding-top: var(--space-xxm);
+  padding-top: var(--space-xl);
   padding-bottom: var(--space-xxm);
-  background-color: var(--resultsSection-BKG);
+  background-color: var(--white);
 }
 
 /* ImageView Section */
 
 .displayedImageContainer {
-  padding: var(--space-xl) 0;
+  padding-top: var(--space-xl);
 }
 
 .displayedImage {
   width: 100%;
   border-radius: 5px;
+  border: 1px solid var(--resultsSection-BKG);
 }
 
 .imageViewSection {
@@ -245,14 +263,15 @@ footer {
 }
 
 .resultsSection h4 {
-  color: white;
+  color: var(--headers-black);
   font-weight: 700;
 }
 
 .titleLine {
-  border-top: 3px solid white;
-  border-radius: 10px;
+  background-color: var(--headers-black);
+  border-radius: 10px !important;
   width: 50px;
+  height: 2px;
   margin-bottom: var(--space-md);
 }
 
@@ -266,6 +285,7 @@ footer {
   margin-bottom: var(--space-md);
   background-color: var(--color-secondary);
   border-radius: 5px;
+  border: 1px solid var(--resultsSection-BKG);
   padding: var(--space-md) var(--space-sm) var(--space-md) var(--space-sm);
 }
 
@@ -285,18 +305,21 @@ footer {
 
 /*---------------------------- Desktop and up  */
 
-@media (min-width: 1281px) {
+@media (min-width: 992px) {
   :root {
     --text-scale-ratio: 1.5;
   }
   .titleLine {
     width: 75px;
   }
+  .welcomeSection {
+    padding: 0;
+  }
   .welcomeDetails {
     display: flex;
     flex-direction: row;
     padding-top: var(--space-xxl);
-    padding-bottom: var(--space-xxl);
+    padding-bottom: var(--space-md);
     padding-right: var(--space-lg3);
     padding-left: var(--space-lg3);
   }
@@ -319,6 +342,7 @@ footer {
   }
   .heroGirl {
     flex-basis: 40%;
+    text-align: center;
   }
   body h3 {
     text-align: left;
@@ -352,6 +376,9 @@ footer {
     font-size: var(--text-sm);
   }
   .displayedImageContainer {
+    flex-basis: 40%;
+  }
+  .resultsContainer {
     flex-basis: 40%;
   }
   footer {

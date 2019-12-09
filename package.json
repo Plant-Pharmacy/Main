@@ -43,6 +43,7 @@
     "react": "^16.11.0",
     "react-bootstrap": "^1.0.0-beta.16",
     "react-dom": "^16.11.0",
+    "react-image-fade-in": "^1.1.0",
     "react-popupbox": "^2.0.8",
     "sass-loader": "^8.0.0",
     "style-loader": "^1.0.0",
