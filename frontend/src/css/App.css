@@ -357,7 +357,7 @@ footer {
     width: var(--space-xxxl);
     margin-right: var(--space-md);
     color: var(--white);
-    background-color: var(--headers-black);
+    background-color: var(--color-primary);
     border-radius: 5px;
   }
   .uploadBtn {
