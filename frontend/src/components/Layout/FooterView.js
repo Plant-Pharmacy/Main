@@ -19,7 +19,7 @@ class FooterView extends Component {
                     alt="github"
                   />
                 </a>
-                <a href="mailto: plantpharmacy.app@gmail.com">
+                <a href="mailto: plantpharmacy.app@gmail.com" target="_blank">
                   <img src={emaillogo} width="42" alt="email" />
                 </a>
               </div>
