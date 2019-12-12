@@ -12,7 +12,6 @@ Sick plants may be suffering from a lack or overabundance of water, nutrients, o
 
 ## Online Presence
 http://plantpharmacy.app
-
 https://github.com/Plant-Pharmacy
 
 ## Team members 
