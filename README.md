@@ -2,7 +2,7 @@
     <img src="./PPorg/Images/logo.png" width="40%">
 </p>
 
-Plant Pharmacy(http://plantpharmacy.app/)
+http://plantpharmacy.app/
 
 ## Our Mission
 PlantPharmacy's mission is to help users identify the plant disease and the suitable treatment with high accuracy and less confusion.
