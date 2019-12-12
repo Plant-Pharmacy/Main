@@ -2,8 +2,6 @@
     <img src="./PPorg/Images/logo.png" width="40%">
 </p>
 
-http://plantpharmacy.app/
-
 ## Our Mission
 PlantPharmacy's mission is to help users identify the plant disease and the suitable treatment with high accuracy and less confusion.
 
@@ -13,6 +11,7 @@ Plants give us oxygen, provide food for all living organisms, and offer numerous
 Sick plants may be suffering from a lack or overabundance of water, nutrients, or plant diseases caused by biotic agents or pathogens, such as fungi or bacteria. For most people, the problem is not obvious. There are some attempts at solving this information problem in the form of informational websites, forums, articles, books, and journals. All of these solutions thoroughly describe various types of plant diseases, the pathogens that cause them and how they could be treated or prevented. Some websites such as [Fine Gardening](https://www.finegardening.com/) do a better job of explaining different methods of treatment for different types of plant diseases. Despite these solutions, an individual struggles to identify the cause of the plant disease just by looking at it and hence he or she is unable to provide the appropriate treatment to the plant to save it and potentially prevent disease from spreading.
 
 ## Online Presence
+http://plantpharmacy.app/
 https://github.com/Plant-Pharmacy
 
 ## Team members 
@@ -20,7 +19,7 @@ https://github.com/Plant-Pharmacy
     - kyrabb@uw.edu
 - Mikias Lema (CDO)
     - mikias@uw.edu
-- Alessandro Lou (PM/ Engineer)
+- Alessandro Lou (Engineer)
     - alemau@uw.edu
 - Adrian Lonescu (CEO/ Engineer)
     - aiones@uw.edu
