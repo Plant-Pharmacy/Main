@@ -20,7 +20,7 @@ http://plantpharmacy.app
     - mikias@uw.edu
 - Alessandro Lou (Engineer)
     - alemau@uw.edu
-- Adrian Lonescu (CEO/ Engineer)
+- Adrian Ionescu (CEO/ Engineer)
     - aiones@uw.edu
 - Pooja Ramanathan (CTO)
     - ps2112@uw.edu
