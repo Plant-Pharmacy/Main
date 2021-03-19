@@ -7,7 +7,7 @@ verify_ssl = true
 pylint = "*"
 
 [packages]
-djangorestframework = "==3.10.3"
+djangorestframework = "==3.11.2"
 django-rest-knox = "==4.1.0"
 django-cors-headers = "==3.2.0"
 psycopg2 = "==2.8.4"
